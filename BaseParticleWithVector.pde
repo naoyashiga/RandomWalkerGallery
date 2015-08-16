@@ -1,8 +1,11 @@
 class BaseParticleWithVector implements BaseParticleWithVectorInterface {
   PVector location;
   PVector velocity;
+
   PVector friction;
   PVector acceleration;
+
+  float angleVelocity;
 
   float r;
   
@@ -12,6 +15,7 @@ class BaseParticleWithVector implements BaseParticleWithVectorInterface {
     acceleration = new PVector(0, 0);
     friction = new PVector(0.95, 0.95);
     
+    angleVelocity = 0;
     r = 1;
   }
 
