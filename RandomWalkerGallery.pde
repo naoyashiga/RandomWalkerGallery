@@ -1,9 +1,9 @@
 ParticleWithRandomAcceleration[] particles;
 
-int particlesSize = 10;
+int particlesSize = 1000;
 
 void setup() {
-  size(600,600);
+  size(displayWidth, displayHeight);
 
   particles = new ParticleWithRandomAcceleration[particlesSize];
 

@@ -12,7 +12,7 @@ class BaseParticle implements BaseParticleInterface {
     vx = 0;
     vy = 0;
     friction = 0.95;
-    r = 3;
+    r = 1;
   }
 
   void render() {
