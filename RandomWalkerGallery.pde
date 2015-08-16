@@ -1,14 +1,14 @@
-Particle[] particles;
+ParticleWithRandomVelocity[] particles;
 
 int particlesSize = 10;
 
 void setup() {
   size(600,600);
 
-  particles = new Particle[particlesSize];
+  particles = new ParticleWithRandomVelocity[particlesSize];
 
   for (int i = 0; i < particlesSize; i++) {
-    Particle p = new Particle();
+    ParticleWithRandomVelocity p = new ParticleWithRandomVelocity();
     particles[i] = p;
   }
   
@@ -22,7 +22,7 @@ void draw() {
   rect(0, 0, width, height);
 
   for (int i = 0; i < particlesSize; i++) {
-    Particle p = particles[i];
+    ParticleWithRandomVelocity p = particles[i];
 
     p.walk();
     p.render();
