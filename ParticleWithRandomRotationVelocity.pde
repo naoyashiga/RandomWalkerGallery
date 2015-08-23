@@ -2,6 +2,7 @@ class ParticleWithRandomRotationVelocity extends BaseParticleWithVector {
   float v;
   float angle;
   
+  
   ParticleWithRandomRotationVelocity() {
     v = 0;
     angle = 0;
